@@ -1,0 +1,22 @@
+<tmpl_loop name=passwd>
+   <div>
+    <fieldset>
+       <legend><tmpl_var name="user"></legend>
+                <form method=post action=#>
+               <input type="hidden" name="user" value="<tmpl_var name=user>"/>
+        <br/>pass:
+        <input type="text" name="pa" value="<tmpl_var name=pass>"/>
+        <br/>uid:
+        <input type="text" name="ui" value="<tmpl_var name=uid>"/>
+        <br/>gid:
+        <input type="text" name="gi" value="<tmpl_var name=gid>"/>
+        <br/>desc:
+        <input type="text" name="de" value="<tmpl_var name=desc>"/>
+        <br/>home:
+        <input type="text" name="ho" value="<tmpl_var name=home>"/>
+        <br/>shell:
+        <input type="text" name="she" value="<tmpl_var name=shell>"/>
+          </form>
+    </fieldset>
+   </div>
+</tmpl_loop>
